@@ -1,0 +1,19 @@
+.admin-panel {
+  &__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__user-block {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+
+  &__user-photo {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+  }
+}
