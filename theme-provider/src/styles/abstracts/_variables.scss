@@ -1,0 +1,33 @@
+$themes: (
+  light: (
+    // Backgrounds
+    color-bg: #ffffff,
+    // Texts
+    color-text: #242424,
+
+    // Buttons
+    color-btn-primary-bg: #646cff,
+    color-btn-primary-text: #ffffff,
+    color-btn-primary-hover: #0b5ed7,
+
+    color-btn-secondary-bg: #f0f0f0,
+    color-btn-secondary-text: #242424,
+    color-btn-secondary-hover: #646cff,
+  ),
+  dark: (
+    // Backgrounds
+    color-bg: #242424,
+
+    // Texts
+    color-text: #f0f0f0,
+
+    // Buttons
+    color-btn-primary-bg: #646cff,
+    color-btn-primary-text: #ffffff,
+    color-btn-primary-hover: #3bb4f2,
+
+    color-btn-secondary-bg: #444444,
+    color-btn-secondary-text: #f0f0f0,
+    color-btn-secondary-hover: #646cff,
+  )
+);

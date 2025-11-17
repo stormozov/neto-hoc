@@ -1,0 +1,104 @@
+.themed-demo-content {
+  // Переменные для тем
+  --primary-light: #3b82f6;
+  --primary-dark: #60a5fa;
+  --bg-light: #ffffff;
+  --bg-dark: #1e293b;
+  --text-light: #1e293b;
+  --text-dark: #f1f5f9;
+  --border-light: #e2e8f0;
+  --border-dark: #334155;
+  --btn-primary-light: #2563eb;
+  --btn-primary-dark: #3b82f6;
+  --btn-secondary-light: #64748b;
+  --btn-secondary-dark: #94a3b8;
+  
+  transition: all 0.3s ease;
+
+  padding: 2rem;
+  margin-top: 2rem;
+
+  border: 1px solid var(--border-light);
+  border-radius: 12px;
+  
+  // Общие стили
+  &__text {
+    margin: 1.5rem 0;
+    font-size: 1.1rem;
+  }
+  
+  &__buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin: 1.5rem 0;
+  }
+  
+  &__info {
+    margin-top: 2rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--border-light);
+  }
+  
+  &__hint {
+    font-style: italic;
+    font-size: 0.9rem;
+    color: var(--primary-light);
+    margin-top: 0.5rem;
+  }
+  
+  // Тема light (по умолчанию)
+  &--light {
+    background-color: var(--bg-light);
+    color: var(--text-light);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+
+    .themed-demo-content__btn {
+      &.primary {
+        background-color: var(--btn-primary-light);
+        color: var(--bg-light);
+      }
+
+      &.secondary {
+        background-color: var(--btn-secondary-light);
+        color: var(--bg-light);
+      }
+    }
+    
+    .themed-demo-content__info {
+      border-top-color: var(--border-light);
+    }
+    
+    .themed-demo-content__hint {
+      color: var(--primary-light);
+    }
+  }
+  
+  // Тема dark
+  &--dark {
+    background-color: var(--bg-dark);
+    color: var(--text-dark);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    border-color: var(--border-dark);
+
+    .themed-demo-content__btn {
+      &.primary {
+        background-color: var(--btn-primary-dark);
+        color: var(--bg-dark);
+      }
+
+      &.secondary {
+        background-color: var(--btn-secondary-dark);
+        color: var(--bg-dark);
+      }
+    }
+    
+    .themed-demo-content__info {
+      border-top-color: var(--border-dark);
+    }
+    
+    .themed-demo-content__hint {
+      color: var(--primary-dark);
+    }
+  }
+}

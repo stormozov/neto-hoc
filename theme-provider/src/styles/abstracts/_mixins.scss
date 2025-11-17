@@ -1,0 +1,8 @@
+@use "sass:map";
+@use "./variables" as *;
+
+@mixin theme-vars($theme-name) {
+  @each $token, $value in map.get($themes, $theme-name) {
+    --#{$token}: #{$value};
+  }
+}
