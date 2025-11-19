@@ -1,0 +1,26 @@
+.focus-tracker {
+  padding: 1rem 0;
+
+  &__content {
+    margin-top: 1.725rem;
+  }
+
+  &__inputs {
+    display: grid;
+    gap: 0.5rem;
+  }
+
+  &__input-wrapper {
+    padding: 1rem;
+    border: 1px solid #4d4d4d;
+    border-radius: 8px;
+  }
+
+  &__input-title {
+    margin-bottom: 1rem;
+  }
+
+  &__focus-checker {
+    margin-bottom: 0.4rem;
+  }
+}
